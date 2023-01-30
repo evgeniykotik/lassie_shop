@@ -10,26 +10,22 @@
                     "PATH" => SITE_DIR."include/purchase.php"),
                 false
             );?>
-            <ul class="list">
-                <li class="list__item"><a href="javascript:void(0);" class="footer__text">Как купить</a>
-                </li>
-                <li class="list__item"><a href="javascript:void(0);" class="footer__text">Пользовательское соглашение</a>
-                </li>
-                <li class="list__item"><a href="javascript:void(0);" class="footer__text">Контакты</a>
-                </li>
-                <li class="list__item"><a href="javascript:void(0);" class="footer__text">Способы оплаты заказа</a>
-                </li>
-                <li class="list__item"><a href="javascript:void(0);" class="footer__text">Доставка</a>
-                </li>
-                <li class="list__item"><a href="javascript:void(0);" class="footer__text">Возврат товара</a>
-                </li>
-                <li class="list__item"><a href="javascript:void(0);" class="footer__text">Таблица размеров</a>
-                </li>
-                <li class="list__item"><a href="javascript:void(0);" class="footer__text">Часто задаваемые вопросы</a>
-                </li>
-                <li class="list__item"><a href="javascript:void(0);" class="footer__text">Как правильно одевать ребенка</a>
-                </li>
-            </ul>
+            <?$APPLICATION->IncludeComponent(
+                "bitrix:menu",
+                "leftbottom",
+                Array(
+                    "ALLOW_MULTI_SELECT" => "N",
+                    "CHILD_MENU_TYPE" => "bottom_left",
+                    "DELAY" => "N",
+                    "MAX_LEVEL" => "1",
+                    "MENU_CACHE_GET_VARS" => array(""),
+                    "MENU_CACHE_TIME" => "3600",
+                    "MENU_CACHE_TYPE" => "N",
+                    "MENU_CACHE_USE_GROUPS" => "N",
+                    "ROOT_MENU_TYPE" => "bottom_left",
+                    "USE_EXT" => "N"
+                )
+            );?>
         </div>
         <div class="footer__col">
             <?$APPLICATION->IncludeComponent(
@@ -40,20 +36,22 @@
                     "PATH" => SITE_DIR."include/lassie.php"),
                 false
             );?>
-            <ul class="list">
-                <li class="list__item"><a href="javascript:void(0);" class="footer__text">О компании lassie</a>
-                </li>
-                <li class="list__item"><a href="javascript:void(0);" class="footer__text">История</a>
-                </li>
-                <li class="list__item"><a href="javascript:void(0);" class="footer__text">Качество</a>
-                </li>
-                <li class="list__item"><a href="javascript:void(0);" class="footer__text">Уход за вещами</a>
-                </li>
-                <li class="list__item"><a href="javascript:void(0);" class="footer__text">Категории Lassie<sup>®</sup></a>
-                </li>
-                <li class="list__item"><a href="javascript:void(0);" class="footer__text">Символы Lassie<sup>®</sup></a>
-                </li>
-            </ul>
+            <?$APPLICATION->IncludeComponent(
+                "bitrix:menu",
+                "leftbottom",
+                Array(
+                    "ALLOW_MULTI_SELECT" => "N",
+                    "CHILD_MENU_TYPE" => "bottom_center",
+                    "DELAY" => "N",
+                    "MAX_LEVEL" => "1",
+                    "MENU_CACHE_GET_VARS" => array(""),
+                    "MENU_CACHE_TIME" => "3600",
+                    "MENU_CACHE_TYPE" => "N",
+                    "MENU_CACHE_USE_GROUPS" => "N",
+                    "ROOT_MENU_TYPE" => "bottom_center",
+                    "USE_EXT" => "N"
+                )
+            );?>
         </div>
         <div class="footer__col">
             <?$APPLICATION->IncludeComponent(
@@ -64,16 +62,22 @@
                     "PATH" => SITE_DIR."include/lassieclub.php"),
                 false
             );?>
-            <ul class="list">
-                <li class="list__item"><a href="javascript:void(0);" class="footer__text">Зарегистрироваться</a>
-                </li>
-                <li class="list__item"><a href="javascript:void(0);" class="footer__text">Войти в личный кабинет</a>
-                </li>
-                <li class="list__item"><a href="javascript:void(0);" class="footer__text">Забыли Ваш пароль?</a>
-                </li>
-                <li class="list__item"><a href="javascript:void(0);" class="footer__text">Защита персональной информации</a>
-                </li>
-            </ul>
+            <?$APPLICATION->IncludeComponent(
+                "bitrix:menu",
+                "leftbottom",
+                Array(
+                    "ALLOW_MULTI_SELECT" => "N",
+                    "CHILD_MENU_TYPE" => "bottom_right",
+                    "DELAY" => "N",
+                    "MAX_LEVEL" => "1",
+                    "MENU_CACHE_GET_VARS" => array(""),
+                    "MENU_CACHE_TIME" => "3600",
+                    "MENU_CACHE_TYPE" => "N",
+                    "MENU_CACHE_USE_GROUPS" => "N",
+                    "ROOT_MENU_TYPE" => "bottom_right",
+                    "USE_EXT" => "N"
+                )
+            );?>
         </div>
         <?$APPLICATION->IncludeComponent(
             "bitrix:main.include",
