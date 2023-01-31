@@ -11,16 +11,15 @@
 /** @var string $componentPath */
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);
-
+//echo "<pre>"; print_r($arResult["ITEMS"]); echo "</pre>";
 ?>
-<div class="index__slider slider">
+<<div class="index__slider slider">
     <ul class="slider__container">
         <?  foreach ($arResult["ITEMS"] as $arItem):  ?>
             <li class="slider__item">
                 <img src="<?= $arItem["PREVIEW_PICTURE"]["SRC"]  ?>" alt="" class="slider__img">
-                <div class="index__slider-title"><?= $arItem["NAME"];  ?> </div>
+                <div class="index__slider-title"><?= $arItem["PREVIEW_TEXT"];  ?> </div>
             </li>
-        <?  endforeach; ?>
+        <? endforeach; ?>
     </ul>
 </div>
-

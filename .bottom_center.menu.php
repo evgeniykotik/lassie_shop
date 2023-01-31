@@ -1,12 +1,19 @@
 <?
 $aMenuLinks = Array(
-    Array(
-        "О компании Lassie",
-        "/o-kompanii/",
-        Array(),
-        Array(),
-        ""
-    ),
+	Array(
+		"О компании Lassie", 
+		"/o-kompanii/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"История", 
+		"/istoriya/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
 	Array(
 		"Качество", 
 		"/kachestvo/", 

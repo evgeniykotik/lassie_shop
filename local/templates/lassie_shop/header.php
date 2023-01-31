@@ -1,5 +1,7 @@
 <?php if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
 
+
+
 ?>
 <!DOCTYPE html>
 <html lang="ru">
@@ -109,12 +111,29 @@
                     "PATH" => SITE_DIR."include/contacts.php"),
                 false
             );?>
-            <div class="header__col header__col_basket"><span class="header__icon icon-bag"></span>
-                <div class="header__basket">
-                    <div class="text">В вашей корзине</div>
-                    <a href="javascript:void(0);" class="link">4 товара на 25 196 руб.</a>
-                </div>
-            </div>
+            <? $APPLICATION->IncludeComponent(
+	"bitrix:sale.basket.basket.line", 
+	"basket", 
+	array(
+		"PATH_TO_BASKET" => "/personal/cart/",
+		"PATH_TO_PERSONAL" => SITE_DIR."personal/",
+		"SHOW_PERSONAL_LINK" => "N",
+		"SHOW_NUM_PRODUCTS" => "Y",
+		"SHOW_TOTAL_PRICE" => "Y",
+		"SHOW_PRODUCTS" => "N",
+		"POSITION_FIXED" => "N",
+		"SHOW_AUTHOR" => "N",
+		"PATH_TO_REGISTER" => "zaregistrirovatsya/",
+		"PATH_TO_PROFILE" => "personal/",
+		"COMPONENT_TEMPLATE" => "basket",
+		"PATH_TO_ORDER" => "personal/order/make/",
+		"SHOW_EMPTY_VALUES" => "Y",
+		"PATH_TO_AUTHORIZE" => "voyti-v-lichnyy-kabinet/",
+		"SHOW_REGISTRATION" => "N",
+		"HIDE_ON_BASKET_PAGES" => "N"
+	),
+	false
+); ?>
         </div>
     </div>
     <div class="header__bottom">
@@ -638,6 +657,9 @@
         </div>
     </div>
 </header>
+<?
+if ($APPLICATION->GetCurPage() == '/'):
+?>
 <main class="content index">
     <?php $APPLICATION->IncludeComponent("bitrix:news.list", "slider", array(
         "ACTIVE_DATE_FORMAT" => "d.m.Y",    // Формат показа даты
@@ -703,3 +725,4 @@
     <section class="popular">
         <div class="container">
             <h1 class="heading"><span class="heading__text">Популярные товары</span></h1>
+            <? endif; ?>

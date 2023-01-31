@@ -6,6 +6,10 @@
     font-style: normal
 }
 
+.heading {
+    margin-top: 20px;
+}
+
 @font-face {
     font-family: fontello;
     src: url(assets/fonts/fontello.eot);

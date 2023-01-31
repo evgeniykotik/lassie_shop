@@ -16,12 +16,28 @@ $arUrlRewrite=array (
     'PATH' => '/desktop_app/router.php',
     'SORT' => 100,
   ),
+  13 => 
+  array (
+    'CONDITION' => '#^/kak-pravilno-odevat-rebenka/#',
+    'RULE' => '',
+    'ID' => 'bitrix:news',
+    'PATH' => '/kak-pravilno-odevat-rebenka/index.php',
+    'SORT' => 100,
+  ),
   4 => 
   array (
     'CONDITION' => '#^\\/?\\/mobileapp/jn\\/(.*)\\/.*#',
     'RULE' => 'componentName=$1',
     'ID' => NULL,
     'PATH' => '/bitrix/services/mobileapp/jn.php',
+    'SORT' => 100,
+  ),
+  14 => 
+  array (
+    'CONDITION' => '#^/chasto-zadavaemye-voprosy/#',
+    'RULE' => '',
+    'ID' => 'bitrix:news',
+    'PATH' => '/chasto-zadavaemye-voprosy/index.php',
     'SORT' => 100,
   ),
   6 => 
@@ -56,7 +72,7 @@ $arUrlRewrite=array (
     'PATH' => '/personal/order/index.php',
     'SORT' => 100,
   ),
-  10 => 
+  12 => 
   array (
     'CONDITION' => '#^/personal/#',
     'RULE' => '',
