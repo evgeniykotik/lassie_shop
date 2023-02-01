@@ -136,6 +136,27 @@
 ); ?>
         </div>
     </div>
+    <?$APPLICATION->IncludeComponent(
+	"bitrix:menu", 
+	"bootstrap_v4", 
+	array(
+		"ROOT_MENU_TYPE" => "main",
+		"MENU_CACHE_TYPE" => "A",
+		"MENU_CACHE_TIME" => "36000000",
+		"MENU_CACHE_USE_GROUPS" => "Y",
+		"MENU_THEME" => "blue",
+		"CACHE_SELECTED_ITEMS" => "N",
+		"MENU_CACHE_GET_VARS" => array(
+		),
+		"MAX_LEVEL" => "3",
+		"CHILD_MENU_TYPE" => "main",
+		"USE_EXT" => "Y",
+		"DELAY" => "N",
+		"ALLOW_MULTI_SELECT" => "N",
+		"COMPONENT_TEMPLATE" => "bootstrap_v4"
+	),
+	false
+);?>
     <div class="header__bottom">
         <div class="container">
             <nav class="header__nav navigation">
@@ -657,10 +678,10 @@
         </div>
     </div>
 </header>
+<main class="content index">
 <?
 if ($APPLICATION->GetCurPage() == '/'):
 ?>
-<main class="content index">
     <?php $APPLICATION->IncludeComponent("bitrix:news.list", "slider", array(
         "ACTIVE_DATE_FORMAT" => "d.m.Y",    // Формат показа даты
         "ADD_SECTIONS_CHAIN" => "N",    // Включать раздел в цепочку навигации

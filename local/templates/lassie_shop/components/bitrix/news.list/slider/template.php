@@ -13,7 +13,7 @@
 $this->setFrameMode(true);
 //echo "<pre>"; print_r($arResult["ITEMS"]); echo "</pre>";
 ?>
-<<div class="index__slider slider">
+<div class="index__slider slider">
     <ul class="slider__container">
         <?  foreach ($arResult["ITEMS"] as $arItem):  ?>
             <li class="slider__item">

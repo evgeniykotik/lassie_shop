@@ -13,6 +13,6 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
 /** @var CBitrixComponent $component */
 ?>
 <div class="header__col header__col_top-left"><span class="header__icon icon-mail"></span>
-    <a href="javascript:void(0);" class="link">
+    <a href="https://www.youtube.com/channel/UCGBUT1sUy-98e7nIgw5K2-w" target="_blank" class="link">
         <? if ($arResult["FILE"] <> '')
             include($arResult["FILE"]); ?></a></div>
