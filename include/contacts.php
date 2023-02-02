@@ -17,7 +17,7 @@
 		</div>
 	</div>
 	<div class="header__col header__col_contacts">
-		<a href="javascript:void(0);" class="link">Контактная информация</a>
+		<a href="/kontakty/" class="link">Контактная информация</a>
 	</div>
 </div>
 <br>

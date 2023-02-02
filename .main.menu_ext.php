@@ -39,6 +39,4 @@ if(CModule::IncludeModule('iblock'))
 }
 
 $aMenuLinks = array_merge($aMenuLinks, $aMenuLinksExt);
-echo "<pre>"; print_r($aMenuLinks);echo "</pre>";
 ?>
-<br>
