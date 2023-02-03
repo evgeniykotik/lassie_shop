@@ -30,7 +30,7 @@ $aMenuLinks = Array(
 	),
 	Array(
 		"Категории Lassie®", 
-		"/kategorii-lassie/", 
+		"/catalog/", 
 		Array(), 
 		Array(), 
 		"" 

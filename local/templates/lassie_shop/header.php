@@ -137,9 +137,6 @@
         </div>
     </div>
 
-    <div class="header__bottom">
-        <div class="container">
-            <nav class="header__nav navigation">
                 <?$APPLICATION->IncludeComponent(
 	"bitrix:menu", 
 	"main_menu", 
@@ -161,9 +158,6 @@
 	),
 	false
 );?>
-            </nav>
-        </div>
-    </div>
 </header>
 <main class="content index">
 <?
